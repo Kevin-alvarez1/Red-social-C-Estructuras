@@ -1,0 +1,22 @@
+digraph G {
+node [shape=record];
+rankdir=LR;
+node0 [label="{Correo: juan.martinez@example.com\nContenido: El café de la mañana nunca decepciona, ¡energía pura para el día!\nFecha: 10/08/2024\nHora: 07:30}"];
+node1 [label="{Correo: luis.perez@example.com\nContenido: Día perfecto para una caminata por el parque, disfrutando de la naturaleza.\nFecha: 15/08/2024\nHora: 10:57}"];
+node2 [label="{Correo: elena.torres@example.com\nContenido: Cocinando mi plato favorito, nada como la comida casera.\nFecha: 21/08/2024\nHora: 11:40}"];
+node3 [label="{Correo: juan.martinez@example.com\nContenido: A veces solo necesitas una taza de té y un buen libro.\nFecha: 21/08/2024\nHora: 20:30}"];
+node4 [label="{Correo: luis.perez@example.com\nContenido: El ejercicio diario es clave para una vida saludable, nunca lo dudes.\nFecha: 14/08/2024\nHora: 06:15}"];
+node5 [label="{Correo: elena.torres@example.com\nContenido: Los pequeños detalles hacen la diferencia, siempre presta atención.\nFecha: 13/08/2024\nHora: 22:45}"];
+node0 -> node1;
+node1 -> node0;
+node1 -> node2;
+node2 -> node1;
+node2 -> node3;
+node3 -> node2;
+node3 -> node4;
+node4 -> node3;
+node4 -> node5;
+node5 -> node4;
+node0 -> node5;
+node5 -> node0;
+}

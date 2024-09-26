@@ -1,0 +1,12 @@
+digraph G {
+node [shape=plaintext];
+TOP5_USUARIOS [label=<
+<table border='2' cellborder='1' cellspacing='0'>
+<tr><td><b>Usuario</b></td><td><b>Relaciones</b></td></tr>
+<tr><td>miguel.rodriguez@example.com</td><td>1</td></tr>
+<tr><td>laura.ramirez@example.com</td><td>1</td></tr>
+<tr><td>ana.hernandez@example.com</td><td>1</td></tr>
+<tr><td>maria.lopez@example.com</td><td>1</td></tr>
+<tr><td>sofia.gonzalez@example.com</td><td>1</td></tr>
+</table>>];
+}

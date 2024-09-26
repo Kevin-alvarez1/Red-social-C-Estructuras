@@ -1,0 +1,7 @@
+digraph G {
+node [shape=record];
+rankdir=LR;
+node0 [label="{Correo: elena.torres@example.com\nReceptor: juan.martinez@example.com\nEstado: ACEPTADA}"];
+node0 -> node1;
+node1 [label="{Correo: juan.martinez@example.com\nReceptor: luis.perez@example.com\nEstado: ACEPTADA}"];
+}

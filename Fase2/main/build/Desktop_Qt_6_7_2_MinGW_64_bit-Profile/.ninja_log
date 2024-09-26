@@ -1,0 +1,42 @@
+# ninja log v6
+31	5162	7476062715841318	main_autogen/timestamp	d3d99850c6785e0c
+31	5162	7476062715841318	main_autogen/mocs_compilation.cpp	d3d99850c6785e0c
+31	5162	7476062715841318	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Profile/main_autogen/timestamp	d3d99850c6785e0c
+31	5162	7476062715841318	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Profile/main_autogen/mocs_compilation.cpp	d3d99850c6785e0c
+5320	9563	7476062720342650	CMakeFiles/main.dir/usuario.cpp.obj	64e73305fbcb3992
+5232	16071	7476062719443538	CMakeFiles/main.dir/main.cpp.obj	473246fc045bcf99
+5215	16084	7476062719291588	CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.obj	ee7011f3447e7b63
+5272	16799	7476062719843616	CMakeFiles/main.dir/Admin.cpp.obj	90e43f09f3096044
+5248	17745	7476062719590344	CMakeFiles/main.dir/login.cpp.obj	561fbb65bfef02f9
+5423	18778	7476062721364514	CMakeFiles/main.dir/registrarse.cpp.obj	24b23f903736b9e3
+5374	19174	7476062720894235	CMakeFiles/main.dir/usuarios.cpp.obj	d202910fce4d8955
+5296	22056	7476062720106235	CMakeFiles/main.dir/listausuarios.cpp.obj	42380cad32073233
+22057	22935	7476062887708845	main.exe	80dab3092d4a34a3
+21	1308	7476067147044232	main_autogen/timestamp	d3d99850c6785e0c
+21	1308	7476067147044232	main_autogen/mocs_compilation.cpp	d3d99850c6785e0c
+21	1308	7476067147044232	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Profile/main_autogen/timestamp	d3d99850c6785e0c
+21	1308	7476067147044232	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Profile/main_autogen/mocs_compilation.cpp	d3d99850c6785e0c
+1310	6808	7476067148042745	CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.obj	ee7011f3447e7b63
+1320	7926	7476067148146585	CMakeFiles/main.dir/login.cpp.obj	561fbb65bfef02f9
+1350	7977	7476067148445183	CMakeFiles/main.dir/registrarse.cpp.obj	24b23f903736b9e3
+1330	9415	7476067148210505	CMakeFiles/main.dir/listausuarios.cpp.obj	42380cad32073233
+26	237	7476068329243593	main_autogen/timestamp	d3d99850c6785e0c
+26	237	7476068329243593	main_autogen/mocs_compilation.cpp	d3d99850c6785e0c
+26	237	7476068329243593	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Profile/main_autogen/timestamp	d3d99850c6785e0c
+26	237	7476068329243593	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Profile/main_autogen/mocs_compilation.cpp	d3d99850c6785e0c
+238	5042	7476068331433214	CMakeFiles/main.dir/login.cpp.obj	561fbb65bfef02f9
+255	5187	7476068331543583	CMakeFiles/main.dir/registrarse.cpp.obj	24b23f903736b9e3
+246	5414	7476068331457705	CMakeFiles/main.dir/usuarios.cpp.obj	d202910fce4d8955
+5414	5876	7476068383188611	main.exe	80dab3092d4a34a3
+31	3344	7476077110452829	main_autogen/timestamp	d3d99850c6785e0c
+31	3344	7476077110452829	main_autogen/mocs_compilation.cpp	d3d99850c6785e0c
+31	3344	7476077110452829	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Profile/main_autogen/timestamp	d3d99850c6785e0c
+31	3344	7476077110452829	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Profile/main_autogen/mocs_compilation.cpp	d3d99850c6785e0c
+3346	8490	7476077111692548	CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.obj	ee7011f3447e7b63
+3357	8672	7476077111787043	CMakeFiles/main.dir/main.cpp.obj	473246fc045bcf99
+3393	9368	7476077112148313	CMakeFiles/main.dir/Admin.cpp.obj	90e43f09f3096044
+3374	9977	7476077111949928	CMakeFiles/main.dir/login.cpp.obj	561fbb65bfef02f9
+3490	10188	7476077113136501	CMakeFiles/main.dir/registrarse.cpp.obj	24b23f903736b9e3
+3459	10586	7476077112802377	CMakeFiles/main.dir/usuarios.cpp.obj	d202910fce4d8955
+3409	11809	7476077112276382	CMakeFiles/main.dir/listausuarios.cpp.obj	42380cad32073233
+11810	12282	7476077196336693	main.exe	80dab3092d4a34a3

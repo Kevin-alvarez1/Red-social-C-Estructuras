@@ -1,0 +1,9 @@
+C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/main.dir
+C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/edit_cache.dir
+C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/rebuild_cache.dir
+C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/list_install_components.dir
+C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/install.dir
+C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/install/local.dir
+C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/install/strip.dir
+C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/main_autogen_timestamp_deps.dir
+C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-MinSizeRel/CMakeFiles/main_autogen.dir

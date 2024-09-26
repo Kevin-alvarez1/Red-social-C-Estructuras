@@ -1,0 +1,12 @@
+digraph AVLTree {
+    node [shape=record];
+    "jm@example.com" -> "cg@example.com";
+    "jm@example.com" -> "lr@example.com";
+    "cg@example.com" -> "ah@example.com";
+    "cg@example.com" -> "jg@example.com";
+    "jg@example.com" -> "et@example.com";
+    "lr@example.com" -> "lp@example.com";
+    "lr@example.com" -> "mr@example.com";
+    "mr@example.com" -> "ml@example.com";
+    "mr@example.com" -> "sg@example.com";
+}

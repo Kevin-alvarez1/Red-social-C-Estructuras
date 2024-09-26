@@ -1,0 +1,31 @@
+digraph G {
+  node [shape=record];
+  nodo0 [label="{cg@example.com | Disfrutando de un día soleado en la playa, la vida es mejor con arena y mar.}"];
+  nodo0 -> nodo1;
+  nodo1 -> nodo0;
+  nodo1 [label="{ml@example.com | Hoy aprendí algo nuevo, siempre es bueno salir de la zona de confort.}"];
+  nodo1 -> nodo2;
+  nodo2 -> nodo1;
+  nodo2 [label="{jm@example.com | El café de la mañana nunca decepciona, ¡energía pura para el día!}"];
+  nodo2 -> nodo3;
+  nodo3 -> nodo2;
+  nodo3 [label="{ah@example.com | Los atardeceres en la ciudad son simplemente mágicos, me encanta.}"];
+  nodo3 -> nodo4;
+  nodo4 -> nodo3;
+  nodo4 [label="{lp@example.com | Día perfecto para una caminata por el parque, disfrutando de la naturaleza.}"];
+  nodo4 -> nodo5;
+  nodo5 -> nodo4;
+  nodo5 [label="{lr@example.com | La lectura de un buen libro puede cambiar tu perspectiva del mundo.}"];
+  nodo5 -> nodo6;
+  nodo6 -> nodo5;
+  nodo6 [label="{jg@example.com | Esos pequeños momentos de felicidad son los que más cuentan.}"];
+  nodo6 -> nodo7;
+  nodo7 -> nodo6;
+  nodo7 [label="{et@example.com | Cocinando mi plato favorito, nada como la comida casera.}"];
+  nodo7 -> nodo8;
+  nodo8 -> nodo7;
+  nodo8 [label="{mr@example.com | Una nueva aventura comienza, emocionado por lo que viene.}"];
+  nodo8 -> nodo9;
+  nodo9 -> nodo8;
+  nodo9 [label="{sg@example.com | La música siempre encuentra la manera de alegrar mi día.}"];
+}

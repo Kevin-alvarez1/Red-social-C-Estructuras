@@ -1,0 +1,8 @@
+digraph G {
+node [shape=plaintext];
+RELACIONES_DE_AMISTAD [label=<
+<table border='2' cellborder='1' cellspacing='0'>
+<tr><td></td><td><b>juan.martinez@example.com</b></td><td><b>luis.perez@example.com</b></td></tr>
+<tr><td>elena.torres@example.com</td><td>x</td><td>x</td></tr>
+</table>>];
+}

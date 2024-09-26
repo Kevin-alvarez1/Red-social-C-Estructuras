@@ -1,0 +1,18 @@
+# ninja log v6
+18	1780	7476066885997697	main_autogen/timestamp	9f1dfa8809f9772
+18	1780	7476066885997697	main_autogen/mocs_compilation.cpp	9f1dfa8809f9772
+18	1780	7476066885997697	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/main_autogen/timestamp	9f1dfa8809f9772
+18	1780	7476066885997697	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/main_autogen/mocs_compilation.cpp	9f1dfa8809f9772
+1840	2552	7476066887563513	CMakeFiles/main.dir/usuario.cpp.obj	7a8b81d039d23ca4
+1798	5666	7476066887195902	CMakeFiles/main.dir/main.cpp.obj	527cdf31d47f255b
+1790	5726	7476066887094539	CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.obj	3bb036a87e4e2be6
+1815	6021	7476066887346810	CMakeFiles/main.dir/Admin.cpp.obj	2fa69b65afc838b3
+1806	6319	7476066887246023	CMakeFiles/main.dir/login.cpp.obj	acca9a3370c53720
+1863	6391	7476066887744392	CMakeFiles/main.dir/registrarse.cpp.obj	2969873d3b9da718
+1828	7407	7476066887445820	CMakeFiles/main.dir/listausuarios.cpp.obj	41b0d6530bd10fe0
+17	247	7476066997842606	main_autogen/timestamp	9f1dfa8809f9772
+17	247	7476066997842606	main_autogen/mocs_compilation.cpp	9f1dfa8809f9772
+17	247	7476066997842606	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/main_autogen/timestamp	9f1dfa8809f9772
+17	247	7476066997842606	C:/Users/Cito/Desktop/carpeta EDD/-EDD-Proyecto1_202203038/Fase2/main/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/main_autogen/mocs_compilation.cpp	9f1dfa8809f9772
+248	4261	7476067000193088	CMakeFiles/main.dir/login.cpp.obj	acca9a3370c53720
+265	4387	7476067000362105	CMakeFiles/main.dir/registrarse.cpp.obj	2969873d3b9da718
