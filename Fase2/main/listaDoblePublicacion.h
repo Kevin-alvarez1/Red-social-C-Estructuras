@@ -49,6 +49,7 @@ public:
     void mostrarPublicacionesOrden(const std::string& correoUsuario, const MatrizDispersa& matrizDispersa, ArbolABB& arbolABB, int orden) const;
     std::vector<Publicacion> obtenerPublicacionesEnOrden(const std::string& tipoOrden) const;
     void eliminarPublicacionPorId(int id);
+    void eliminarPublicacionesPorCorreo(const std::string& correo);
 };
 
 #endif // LISTADOBLEPUBLICACION_H

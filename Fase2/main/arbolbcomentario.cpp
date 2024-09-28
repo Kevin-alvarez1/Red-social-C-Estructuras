@@ -5,7 +5,7 @@
 #include <queue>
 #include <cstdlib>
 #include <map>
-
+#include <algorithm>
 
 ArbolBComentario arbolComentarios_;
 // Constructor de la clase NodoArbolBComentario
@@ -13,6 +13,32 @@ NodoArbolBComentario::NodoArbolBComentario(bool hoja) : esHoja(hoja) {}
 
 // Constructor de la clase ArbolBComentario
 ArbolBComentario::ArbolBComentario() : raiz(nullptr) {}
+
+// Método para eliminar comentarios de un correo específico en el NodoArbolBComentario
+void NodoArbolBComentario::eliminarComentariosPorCorreo(const std::string& correo) {
+    // Eliminar todos los comentarios de este nodo que coincidan con el correo dado
+    comentarios.erase(
+        std::remove_if(comentarios.begin(), comentarios.end(),
+                       [&correo](const Comentario& c) { return c.getCorreo() == correo; }),
+        comentarios.end()
+        );
+
+    // Recursivamente llamar a los hijos para eliminar los comentarios en ellos
+    if (!esHoja) {
+        for (auto hijo : hijos) {
+            hijo->eliminarComentariosPorCorreo(correo);
+        }
+    }
+}
+
+// Método para eliminar comentarios de un correo específico en todo el árbol B
+void ArbolBComentario::eliminarComentariosPorCorreo(const std::string& correo) {
+    if (raiz != nullptr) {
+        raiz->eliminarComentariosPorCorreo(correo);
+    }
+}
+
+
 
 // Método para comparar comentarios por fecha y hora
 bool compararFechas(const std::string& fecha1, const std::string& fecha2) {

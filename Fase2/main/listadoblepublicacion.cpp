@@ -104,6 +104,34 @@ void ListaDoblePublicacion::eliminarPublicacionPorId(int id) {
     std::cout << "No se encontró publicación con ID: " << id << std::endl; // Mensaje si no se encuentra el ID
 }
 
+void ListaDoblePublicacion::eliminarPublicacionesPorCorreo(const std::string& correo) {
+    NodoPublicacion* actual = cabeza; // Comenzamos desde la cabeza de la lista
+
+    while (actual != nullptr) {
+        if (actual->publicacion.getCorreo() == correo) {
+            NodoPublicacion* nodoAEliminar = actual;
+
+            if (nodoAEliminar->anterior != nullptr) {
+                nodoAEliminar->anterior->siguiente = nodoAEliminar->siguiente;
+            } else {
+                cabeza = nodoAEliminar->siguiente;
+            }
+
+            if (nodoAEliminar->siguiente != nullptr) {
+                nodoAEliminar->siguiente->anterior = nodoAEliminar->anterior;
+            } else {
+                cola = nodoAEliminar->anterior;
+            }
+
+            actual = nodoAEliminar->siguiente;
+
+            std::cout << "Depuración: Eliminando publicación con ID: " << nodoAEliminar->publicacion.getId() << " y correo: " << nodoAEliminar->publicacion.getCorreo() << std::endl;
+            delete nodoAEliminar;
+        } else {
+            actual = actual->siguiente;
+        }
+    }
+}
 
 
 int ListaDoblePublicacion::obtenerNuevoId() const

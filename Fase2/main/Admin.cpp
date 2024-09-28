@@ -6,6 +6,8 @@
 #include "login.h"
 #include <QInputDialog>
 #include <QRegularExpression>
+#include "arbolbcomentario.h"
+extern ArbolBComentario arbolComentarios_;
 
 Admin::Admin(ListaUsuarios *listaUsuarios, ListaDoblePublicacion *listadoblepublicacion,  ListaSolicitudes *lista_solicitudes, QWidget *parent)
     : QDialog(parent),
@@ -327,7 +329,8 @@ void Admin::on_eliminar_usuario_clicked(const std::string& correo)
 {
 
     listaUsuarios->borrarUsuarioPorCorreo(correo);
-
+    listadoblepublicacion->eliminarPublicacionesPorCorreo(correo);
+    arbolComentarios_.eliminarComentariosPorCorreo(correo);
     // Eliminar la fila correspondiente de la tabla
     for (int i = 0; i < ui->tabla_buscar_admin->rowCount(); ++i) {
         QTableWidgetItem* item = ui->tabla_buscar_admin->item(i, 2);

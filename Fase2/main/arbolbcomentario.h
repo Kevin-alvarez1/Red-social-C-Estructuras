@@ -8,10 +8,8 @@
 #include <sstream>
 #include "comentario.h"
 #include <map>
-// Definir el orden del árbol B
 #define ORDEN 5
 
-// Clase que define un nodo del Árbol B para los comentarios
 class NodoArbolBComentario {
 public:
     bool esHoja;
@@ -26,13 +24,15 @@ public:
     void recorrer() const;
     NodoArbolBComentario* buscar(const std::string& fecha, const std::string& hora)const;
     static bool compararComentarios(const Comentario& c1, const Comentario& c2);
+    void eliminarComentariosPorCorreo(const std::string& correo);
+
 };
 
 // Clase que define el Árbol B de comentarios
 class ArbolBComentario {
 public:
     ArbolBComentario();
-
+    void eliminarComentariosPorCorreo(const std::string& correo);
     void insertar(const Comentario& comentario);
     std::vector<Comentario> getComentariosDePublicacion(int idPublicacion) const;
     void mostrarComentarios() const;

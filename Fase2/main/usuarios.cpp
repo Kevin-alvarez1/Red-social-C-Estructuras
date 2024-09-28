@@ -81,6 +81,8 @@ void Usuarios::on_Eliminar_boton_clicked()
     if (result == QMessageBox::Yes) {
         // Si el usuario confirma, eliminamos la cuenta
         listaUsuarios->borrarUsuarioPorCorreo(correo);
+        listadoblepublicacion->eliminarPublicacionesPorCorreo(correo);
+        arbolComentarios_.eliminarComentariosPorCorreo(correo);
         QMessageBox::information(this, "Cuenta Eliminada", "Tu cuenta ha sido eliminada correctamente.");
 
         // Mostrar la ventana de inicio de sesión después de la eliminación
@@ -1069,7 +1071,6 @@ void Usuarios::actualizarPanelConImagen(const QString& imagePath) {
 
 void Usuarios::on_generar_reportes_usuario_boton_clicked()
 {
-    // **PARTE 1: Llenar la tabla de fechas con más publicaciones**
 
     // Limpiar la tabla antes de agregar nuevos datos
     ui->fechas_con_mas_publis_tabla->clearContents();
@@ -1081,13 +1082,13 @@ void Usuarios::on_generar_reportes_usuario_boton_clicked()
     // Llenar el vector con las fechas y la cantidad de publicaciones
     llenarFechasCantidad(arbolABB.getRaiz(), fechasCantidad);
 
-    // Ordenar las fechas por la cantidad de publicaciones (opcional)
+    // Ordenar las fechas por la cantidad de publicaciones en orden descendente
     std::sort(fechasCantidad.begin(), fechasCantidad.end(), [](const auto& a, const auto& b) {
-        return b.second < a.second;  // Ordenar en orden ascendente
+        return b.second < a.second;
     });
 
-    // Llenar la tabla con las fechas y la cantidad de publicaciones
-    for (size_t i = 0; i < fechasCantidad.size(); ++i) {
+    // Llenar la tabla con las fechas y la cantidad de publicaciones (Top 3)
+    for (size_t i = 0; i < std::min(fechasCantidad.size(), size_t(3)); ++i) {
         ui->fechas_con_mas_publis_tabla->insertRow(i);
 
         // Insertar la fecha en la primera columna
@@ -1099,12 +1100,12 @@ void Usuarios::on_generar_reportes_usuario_boton_clicked()
         ui->fechas_con_mas_publis_tabla->setItem(i, 1, cantidadItem);
     }
 
-
+    // Limpiar la tabla antes de agregar nuevos datos
     ui->publis_con_mas_comentarios_tabla->clearContents();
     ui->publis_con_mas_comentarios_tabla->setRowCount(0);
 
     // Crear una lista para almacenar los detalles de cada publicación (Fecha, Correo, Número de comentarios)
-    std::vector<std::tuple<std::string, std::string, int>> publisConMasComentarios;
+    std::vector<std::tuple<std::string, std::string, int>> publisConMasComentarios;  // (Fecha, Correo, Numero de comentarios)
 
     // Llenar el vector con las publicaciones y la cantidad de comentarios
     obtenerDetallesComentariosDePublicaciones(arbolABB.getRaiz(), publisConMasComentarios);
@@ -1114,8 +1115,8 @@ void Usuarios::on_generar_reportes_usuario_boton_clicked()
         return std::get<2>(a) > std::get<2>(b);  // Ordenar por el número de comentarios
     });
 
-    // Llenar la tabla con los detalles (Fecha, Correo, Número de comentarios)
-    for (size_t i = 0; i < publisConMasComentarios.size(); ++i) {
+    // Llenar la tabla con los detalles (Top 3)
+    for (size_t i = 0; i < std::min(publisConMasComentarios.size(), size_t(3)); ++i) {
         ui->publis_con_mas_comentarios_tabla->insertRow(i);
 
         // Insertar la fecha en la primera columna
@@ -1132,6 +1133,7 @@ void Usuarios::on_generar_reportes_usuario_boton_clicked()
     }
 }
 
+// **Función para obtener los detalles de las publicaciones con más comentarios**
 void Usuarios::obtenerDetallesComentariosDePublicaciones(NodoABB* nodo, std::vector<std::tuple<std::string, std::string, int>>& publisConMasComentarios)
 {
     if (nodo) {
@@ -1153,6 +1155,7 @@ void Usuarios::obtenerDetallesComentariosDePublicaciones(NodoABB* nodo, std::vec
         obtenerDetallesComentariosDePublicaciones(nodo->derecha, publisConMasComentarios);
     }
 }
+
 // **Función para llenar las fechas y cantidad de publicaciones**
 void Usuarios::llenarFechasCantidad(NodoABB* nodo, std::vector<std::pair<std::string, int>>& fechasCantidad)
 {

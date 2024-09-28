@@ -1,7 +1,6 @@
 digraph BSTTree {
 node [shape=circle];
-"2024/08/12" -> "2024/08/11";
-"2024/08/11" [style=filled, fillcolor=green];
-"pub_2" [shape=rectangle, label="ID: 2\nFecha: 11/08/2024\nHora: 09:45\nCorreo: ml@example.com\nContenido: Hoy aprendí algo nuevo, siempre es bueno salir de la zona de confort."];
-"2024/08/11" -> "pub_2";
+"2001/01/01" [style=filled, fillcolor=green];
+"pub_3" [shape=rectangle, label="ID: 3\nFecha: 01/01/2001\nHora: 12:00 A. M.\nCorreo: ccc\nContenido: dasdsadsadsa"];
+"2001/01/01" -> "pub_3";
 }
